@@ -3,7 +3,6 @@ const app = express();
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectMongoose = require("./MongoDB/connect");
-const bcrypt = require("bcrypt");
 const userModel = require("./MongoDB/userModel");
 const multer = require("multer");
 const path = require("path");
@@ -50,11 +49,11 @@ app.post("/createAccount", async (req, res) => {
     const { name, aadhaarNumber, password } = req.body;
     const user = await userModel.findOne({ aadhaarNumber: aadhaarNumber });
     if (!user) {
-      const hashPassword = await bcrypt.hash(password, 10);
+      // const hashPassword = await bcrypt.hash(password, 10); -- Giving an error while deploying
       const createdUser = await userModel.create({
         name: name,
         aadhaarNumber: aadhaarNumber,
-        password: hashPassword,
+        password: password,
       });
       res.status(200).send({ message: "user created", createdUser });
     } else {
@@ -71,8 +70,8 @@ app.post("/login", async (req, res) => {
     const { aadhaarNumber, password } = req.body;
     const user = await userModel.findOne({ aadhaarNumber: aadhaarNumber });
     if (user) {
-      const match = await bcrypt.compare(password, user.password);
-      if (match) {
+      // const match = await bcrypt.compare(password, user.password);
+      if (password === user.password) {
         res.status(200).send({
           message: "user loggedIn Successfully",
           user: {
