@@ -22,7 +22,7 @@ function ProductsPage() {
     async function getProductData() {
       try {
         const res = await axios.post(
-          "https://udyogsetu-hack4change-backend.onrender.com/getProductDetails",
+          "http://localhost:5000/getProductDetails",
           {
             userAadhaarNumber,
           }
@@ -113,7 +113,7 @@ function ProductsPage() {
               {productDetails.map((ele,index) => (
                 <div className={Style.productDiv} key={ele.id || index}>
                   <div className={Style.imgDiv}>
-                    <img src={`http://localhost:5000/uploads/${ele.photo}`} alt="" />
+                    {/* <img src={`http://localhost:5000/uploads/${ele.photo}`} alt="" /> */}
                     <div className={Style.productNameDiv}>
                       <p className={Style.productNamePara}>{ele.ProductName}</p>
                     </div>
