@@ -25,7 +25,7 @@ function CreateAccountPage() {
     if(name && aadhaarNumber && password){
 
       try {
-        await axios.post("https://udyogsetu-hack4change-backend.onrender.com/createAccount", {name,aadhaarNumber,password})
+        await axios.post("http://localhost:5000/createAccount", {name,aadhaarNumber,password})
         .then((res)=>{
 
           toast.success('Account Created! Please login', {
@@ -124,7 +124,7 @@ function CreateAccountPage() {
           </div>
         <div className={Style.loginInnerDiv2}>
           <h1 className={Style.helloPara}>Create Account</h1>
-          <p className={Style.loginInnerDiv2Para1}>Begin Your Journey with UdyogSetu, Create Account Now!</p>
+          <p className={Style.loginInnerDiv2Para1}> Create Account Now!</p>
           <div className={Style.loginAadharDiv}>
             <p className={Style.nameInputPara}>Name</p>
             <input type="text" placeholder="xyz" className={Style.nameInput} value={name} onChange={(e)=>setName(e.target.value)}/>
