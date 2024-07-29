@@ -38,7 +38,7 @@ function RegisterPage() {
             formData.append('file', file);
 
             try {
-                const response = await axios.post("http://localhost:5000/registerProduct", formData, {
+                const response = await axios.post("https://udyogsetu-hack4change-backend.onrender.com/registerProduct", formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }
