@@ -34,7 +34,7 @@ function MentorsPage() {
     if (userName && userPhone && userMessage) {
 
       try {
-        await axios.post("https://udyogsetu-hack4change-backend.onrender.com/setMentorRequest", {userName,userPhone,userMessage,userEmail})
+        await axios.post("http://localhost:5000/setMentorRequest", {userName,userPhone,userMessage,userEmail})
         .then((res)=>{
 
           toast.success("Requested! We will contact you Shortly", {
@@ -154,7 +154,7 @@ function MentorsPage() {
 
           <div className={Style.mentorListDiv}>
             <div className={Style.mentorsProgramDiv}>
-              <img src="/Assets/mentorImg1.jpg" alt="Mentor 1" />
+              <img src="https://i.ytimg.com/vi/sfi6Ccs_tYg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBfgt3Q0QEy3G3vZeUpCeJp9RANWA" alt="Mentor 1" />
               <p className={Style.mentorShipTitlePara}>
                 Finance Talk by Santosh Nair
               </p>
@@ -167,7 +167,7 @@ function MentorsPage() {
             </div>
 
             <div className={Style.mentorsProgramDiv}>
-              <img src="/Assets/mentorsTalk.png" alt="Mentor 2" />
+              <img src="https://www.sattva.co.in/wp-content/uploads/2023/08/Website-768x403.png" alt="Mentor 2" />
               <p className={Style.mentorShipTitlePara}>
                 Decoding Nano Entrepreneur
               </p>
@@ -262,5 +262,4 @@ function MentorsPage() {
 }
 
 export default MentorsPage;
-
 
