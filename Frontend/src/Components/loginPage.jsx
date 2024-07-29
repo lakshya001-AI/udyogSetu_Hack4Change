@@ -24,7 +24,7 @@ function LoginPage() {
     if (aadhaarNumber && password) {
       try {
         await axios
-          .post("http://localhost:5000/login", { aadhaarNumber, password })
+          .post("https://udyogsetu-hack4change-backend.onrender.com/login", { aadhaarNumber, password })
           .then((res) => {
             toast.success("Logged in successfully! Welcome to udyogSetu", {
               position: "top-right",
