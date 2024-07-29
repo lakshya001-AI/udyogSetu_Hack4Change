@@ -25,7 +25,7 @@ function CreateAccountPage() {
     if(name && aadhaarNumber && password){
 
       try {
-        await axios.post("http://localhost:5000/createAccount", {name,aadhaarNumber,password})
+        await axios.post("https://udyogsetu-hack4change-backend.onrender.com/createAccount", {name,aadhaarNumber,password})
         .then((res)=>{
 
           toast.success('Account Created! Please login', {
