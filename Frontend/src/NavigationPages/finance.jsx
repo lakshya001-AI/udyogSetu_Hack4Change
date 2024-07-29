@@ -48,7 +48,7 @@ function FinancePage() {
                   <div className={Style.financelistingDiv}>
 
                     <div className={Style.financeGroupDiv}>
-                      <img src="/Assets/avantiFinanceloansImg.jpg" alt="" className={Style.financeCImg}/>
+                      <img src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2021/10/28/164173-avantifinancein.jpg?itok=scZ9B7rn" alt="" className={Style.financeCImg}/>
                       <p>Avanti Finance is a financial group that aims to make financial services affordable and accessible in India and help nano/micro Entrepreneurs</p>
 
                       <Link className={Style.financeLink} to="https://www.avantifinance.in/">Enquiry Now</Link>
@@ -56,7 +56,7 @@ function FinancePage() {
                     </div>
 
                     <div className={Style.financeGroupDiv}>
-                      <img src="/Assets/michaelandSusanGroup1.png" alt="" className={Style.financeCImg}/>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUx4u9QCOd1dZCBnfavCWm1yf0KGE9GshY1LattyVALOo0rat4zCISjuPikv48vxKc9p0&usqp=CAU" alt="" className={Style.financeCImg}/>
                       <p>Michael and susan dell foundation deliver a range of credit and savings options designed for low-income households and help Entrepreneurs</p>
 
                       <Link className={Style.financeLink} to="https://www.dell.org/">Enquiry Now</Link>
@@ -64,7 +64,7 @@ function FinancePage() {
                     </div>
 
                     <div className={Style.financeGroupDiv}>
-                      <img src="/Assets/arthanFinanceImg.jpg" alt="" className={Style.financeCImg}/>
+                      <img src="https://content.jdmagicbox.com/v2/comp/baramati/n6/9999p2112.2112.240221205439.d2n6/catalogue/arthan-finance-baramati-branch-anand-nagar-colony-baramati-financial-institutions-iyc6o43l6e.jpg" alt="" className={Style.financeCImg}/>
                       <p>Arthan Finance aim and objective of complementing banks as a provider of capital and specifically to self-employed entrepreneurs, MSMEs and consumers in India </p>
 
                       <Link className={Style.financeLink} to="https://arthan.finance/">Enquiry Now</Link>
