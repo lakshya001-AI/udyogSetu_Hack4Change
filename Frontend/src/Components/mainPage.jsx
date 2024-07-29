@@ -164,10 +164,10 @@ function MainPage() {
           </h1>
 
           <div className={Style.sectionMainPage3InnerDiv}>
-            {["goalsImg1.jpg", "goalsImg2.jpg", "goalsImg3.jpg", "goalsImg4.jpg"].map((img, index) => (
+            {["https://today.thefinancialexpress.com.bd/uploads/1558708056.jpg", "https://caritasindia.org/GlobalProgramIndia/wp-content/uploads/2021/09/DRR-Photo6.jpeg", "https://brandminds.com/wp-content/uploads/2021/07/brand-minds-how-ai-transforms-amazon-ecommerce-powerhouse-min.jpg", "https://www.villagesquare.in/wp-content/uploads/2022/11/DIU-01-1.jpg"].map((img, index) => (
               <div className={`${Style.section3FirstInnerDiv}`} ref={(el) => (section3Refs.current[index] = el)} key={index}>
                 <div className={Style.imageDivSection3}>
-                  <img src={`\\Assets\\${img}`} alt="" />
+                  <img src={`${img}`} alt="" />
                 </div>
                 <p className={Style.paraSection3}>
                   {["Zero-Interest Finance Program", "Campaigns and Mentorship", "E-Commerce Listings", "Connecting Buyers and Entrepreneurs"][index]}
@@ -183,9 +183,9 @@ function MainPage() {
           </h1>
 
           <div className={Style.sectionMainPage4PartnersDiv}>
-            {["avantiFinance.jpg", "arthanFInance.jpg", "KinaraCapitals.jpg", "caspianImg.jpg"].map((img, index) => (
+            {["https://m.economictimes.com/thumb/msid-99214202,width-1600,height-900,resizemode-4,imgsize-7990/avanti-finance.jpg", "https://cdn.theorg.com/b3528ec0-4222-4fe8-a1ba-8c4c86ebb6bc_medium.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRbzecHeVUDesdab-4zGxRcOUOrvGz3IrW6g&s", "https://img.etimg.com/thumb/width-1200,height-1200,imgsize-4940,resizemode-75,msid-111734044/industry/banking/finance/caspian-debt-disburses-rs-5019-cr-to-140-enterprises-in-fy24.jpg"].map((img, index) => (
               <div className={Style.section4PartnerDiv} key={index}>
-                <img src={`\\Assets\\${img}`} alt="" />
+                <img src={`${img}`} alt="" />
               </div>
             ))}
           </div>
