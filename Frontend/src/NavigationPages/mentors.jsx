@@ -189,7 +189,7 @@ function MentorsPage() {
           <div className={Style.mentorRequestDiv}>
             <div className={Style.overlayMentor}>
               <h1 className={Style.mentorShipHeading}>Embark on a journey of growth and success with UdyogSetu's Mentorship Program</h1>
-              <p className={Style.mentorShipPara}>Our mentors provide personalized advice, valuable insights, and practical solutions to help you navigate the challenges of running a business. Don’t miss this opportunity to elevate your entrepreneurial skills and achieve your business goals with the help of our expert mentors.</p>
+              <p className={Style.mentorShipPara}>Our mentors provide personalized advice, valuable insights, and practical solutions to help you navigate the challenges of running a business. Join our mentorship Program</p>
               <button className={Style.joinMentorshipBtn} onClick={getMentorShip}>Get Mentorship</button>
             </div>
           </div>
