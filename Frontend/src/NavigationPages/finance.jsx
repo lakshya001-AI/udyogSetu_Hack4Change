@@ -65,7 +65,7 @@ function FinancePage() {
 
                     <div className={Style.financeGroupDiv}>
                       <img src="https://content.jdmagicbox.com/v2/comp/baramati/n6/9999p2112.2112.240221205439.d2n6/catalogue/arthan-finance-baramati-branch-anand-nagar-colony-baramati-financial-institutions-iyc6o43l6e.jpg" alt="" className={Style.financeCImg}/>
-                      <p>Arthan Finance aim and objective of complementing banks as a provider of capital and specifically to self-employed entrepreneurs, MSMEs and consumers in India </p>
+                      <p>Arthan Finance's supported numerous trailing businesses, shop owners and burgeoning entrepreneurs by providing them with the required working capital</p>
 
                       <Link className={Style.financeLink} to="https://arthan.finance/">Enquiry Now</Link>
 
