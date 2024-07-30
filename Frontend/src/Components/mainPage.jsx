@@ -164,7 +164,7 @@ function MainPage() {
           </h1>
 
           <div className={Style.sectionMainPage3InnerDiv}>
-            {["https://today.thefinancialexpress.com.bd/uploads/1558708056.jpg", "https://caritasindia.org/GlobalProgramIndia/wp-content/uploads/2021/09/DRR-Photo6.jpeg", "https://brandminds.com/wp-content/uploads/2021/07/brand-minds-how-ai-transforms-amazon-ecommerce-powerhouse-min.jpg", "https://qph.cf2.quoracdn.net/main-qimg-bc5592c0352f3bd317d31c3f0026de73-lq"].map((img, index) => (
+            {["https://today.thefinancialexpress.com.bd/uploads/1558708056.jpg", "https://caritasindia.org/GlobalProgramIndia/wp-content/uploads/2021/09/DRR-Photo6.jpeg", "https://brandminds.com/wp-content/uploads/2021/07/brand-minds-how-ai-transforms-amazon-ecommerce-powerhouse-min.jpg", "https://media.istockphoto.com/id/1213540968/photo/woman-paying-by-credit-card-at-the-supermarket.jpg?s=612x612&w=0&k=20&c=N2ePTbV3ZnI-lI6buTKQGkfEP7ICks8i9pI4NYZa1I8="].map((img, index) => (
               <div className={`${Style.section3FirstInnerDiv}`} ref={(el) => (section3Refs.current[index] = el)} key={index}>
                 <div className={Style.imageDivSection3}>
                   <img src={`${img}`} alt="" />
